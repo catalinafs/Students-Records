@@ -6,7 +6,7 @@ CREATE TABLE coach(
     dni CHARACTER VARYING(15) UNIQUE NOT NULL,
     "name" CHARACTER VARYING(50) NOT NULL,
     last_name CHARACTER VARYING(50) NOT NULL,
-    stack text[] NOT NULL,
+    stack TEXT NOT NULL,
     birthday DATE NOT NULL,
     cellphone NUMERIC NULL,
     entry_date DATE NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE course(
     id SERIAL,
     "name" CHARACTER VARYING(50) UNIQUE NOT NULL,
     "description" TEXT NOT NULL UNIQUE,
-    syllabus TEXT[] NOT NULL UNIQUE,
+    syllabus TEXT NOT NULL UNIQUE,
     duration CHARACTER VARYING(30) NOT NULL,
     price MONEY NOT NULL,
     CONSTRAINT course_pkey PRIMARY KEY (id)
